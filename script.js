@@ -27,6 +27,7 @@ toggle.addEventListener("click", (e) => {
   e.stopPropagation();
   navMenu.classList.toggle("open");
   toggle.classList.toggle("open");
+  document.querySelector("nav").classList.toggle("menu-open");
 });
 
 // Close menu when clicking a link
@@ -34,6 +35,7 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("open");
     toggle.classList.remove("open");
+    document.querySelector("nav").classList.remove("menu-open");
   });
 });
 
@@ -42,6 +44,7 @@ document.addEventListener("click", (e) => {
   if (!e.target.closest("nav")) {
     navMenu.classList.remove("open");
     toggle.classList.remove("open");
+    document.querySelector("nav").classList.remove("menu-open");
   }
 });
 
