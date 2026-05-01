@@ -30,6 +30,7 @@ body {
   color: var(--ink);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  cursor: default;
 }
 a {
   color: inherit;
