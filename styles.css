@@ -312,6 +312,10 @@ section {
   border-bottom: 1px solid var(--rule);
 }
 .tab-btn {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  width: auto;
   font-family: var(--sans);
   font-size: 0.72rem;
   font-weight: 500;
@@ -329,13 +333,42 @@ section {
     border-color 0.2s;
   white-space: nowrap;
 }
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #222;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
 .tab-btn:hover {
   color: var(--ink);
 }
 .tab-btn.active {
   color: var(--ink);
-  border-bottom-color: var(--ink);
 }
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}
+
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: #222;
+
+  left: 0;
+  width: 0;
+
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 
 /* ── GALLERY GRID ────────────────────────────────────── */
 .gallery-panel {
@@ -623,6 +656,7 @@ section {
     background 0.2s;
   resize: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 .field input::placeholder,
 .field textarea::placeholder {

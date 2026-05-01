@@ -16,6 +16,29 @@ tabBtns.forEach((btn) => {
   });
 });
 
+/* ── TAB UNDERLINE ─────────────────────────────────── */
+const underline = document.querySelector(".tab-underline");
+
+function moveUnderline(el) {
+  const text = el.querySelector("span");
+
+  const rect = text.getBoundingClientRect();
+  const parentRect = el.parentElement.getBoundingClientRect();
+
+  underline.style.width = rect.width + "px";
+  underline.style.left = (rect.left - parentRect.left) + "px";
+}
+
+// set initial position (after page loads)
+moveUnderline(document.querySelector(".tab-btn.active"));
+
+// update underline on click
+tabBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    moveUnderline(btn);
+  });
+});
+
 
 /* ── NAV ───────────────────────────────────────────── */
 const toggle = document.querySelector(".nav-toggle");
