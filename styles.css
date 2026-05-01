@@ -770,8 +770,8 @@ footer {
     padding: 60px 32px 48px;
   }
   .hero-image {
-    height: 60vw;
-    padding: 0 24px;
+    padding: 0;
+    height: auto;
   }
   .hero-image img {
     object-position: center 80%;
