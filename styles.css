@@ -155,7 +155,7 @@ nav.menu-open {
 .nav-toggle.open span:nth-child(2) {
   transform: rotate(-45deg) translateY(-6px);
 }
-/* ── HERO ────────────────────────────────────────────── */
+/* HERO */
 .hero {
   padding-top: var(--nav-h);
   display: grid;
@@ -272,7 +272,7 @@ nav.menu-open {
   pointer-events: none;
 }
 
-/* ── SECTIONS ────────────────────────────────────────── */
+/* SECTIONS */
 section {
   padding: clamp(72px, 8vw, 120px) clamp(24px, 6vw, 80px);
 }
@@ -301,7 +301,7 @@ section {
   color: var(--ink-muted);
 }
 
-/* ── GALLERY TABS ────────────────────────────────────── */
+/* GALLERY TABS */
 #work {
   background: var(--surface);
 }
@@ -361,7 +361,7 @@ section {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background: #222;
+  background: #b9901e;
 
   left: 0;
   width: 0;
@@ -370,7 +370,7 @@ section {
 }
 
 
-/* ── GALLERY GRID ────────────────────────────────────── */
+/* GALLERY GRID */
 .gallery-panel {
   display: none;
 }
@@ -410,13 +410,13 @@ section {
   transform: scale(1.03);
 }
 
-/* ── CLOUDINARY PLACEHOLDER HELPER ──────────────────── */
+/* CLOUDINARY PLACEHOLDER HELPER */
 /*
       Replace each src below with your Cloudinary URL.
       Format: https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/w_900,f_auto,q_auto/YOUR_IMAGE_ID
-    */
+*/
 
-/* ── LIGHTBOX ────────────────────────────────────────── */
+/* LIGHTBOX */
 #lightbox {
   display: none;
   position: fixed;
@@ -496,7 +496,7 @@ section {
   white-space: nowrap;
 }
 
-/* ── ABOUT ───────────────────────────────────────────── */
+/* ABOUT */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -571,7 +571,7 @@ section {
   margin-top: 4px;
 }
 
-/* ── CONTACT ─────────────────────────────────────────── */
+/* CONTACT */
 #contact {
   background: var(--ink);
   color: var(--bg);
@@ -619,7 +619,7 @@ section {
   color: rgba(248, 247, 244, 0.75);
 }
 
-/* Form */
+/* FORM */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -696,7 +696,7 @@ section {
   line-height: 1.6;
 }
 
-/* ── FOOTER ──────────────────────────────────────────── */
+/* FOOTER */
 footer {
   background: var(--ink);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -762,13 +762,13 @@ footer {
   text-shadow: 0 0 6px rgba(196, 168, 130, 0.25);
 }
 
-/* ── ANIMATIONS ──────────────────────────────────────── */
+/* ANIMATIONS */
 .fade-up {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
   transition:
-    opacity 0.8s ease,
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .fade-up.visible {
@@ -776,7 +776,7 @@ footer {
   transform: translateY(0) scale(1);
 }
 
-/* ── RESPONSIVE ──────────────────────────────────────── */
+/* RESPONSIVE */
 
 @media (min-width: 1200px) {
   .hero-image {
@@ -908,7 +908,7 @@ footer {
     opacity: 1;
   }
 
-  /* ✨ staggered links */
+  /* ✨ ANIMATION: staggered links */
   .nav-links a {
     opacity: 0;
     transform: translateY(10px);
