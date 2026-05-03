@@ -362,10 +362,8 @@ section {
   bottom: 0;
   height: 2px;
   background: #b9901e;
-
   left: 0;
   width: 0;
-
   transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -767,8 +765,8 @@ footer {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .fade-up.visible {
@@ -851,6 +849,17 @@ footer {
   .site-credit {
     margin-left: 0;
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-tabs {
+    flex-direction: column;
+    margin-top: -24px;
+    padding-bottom: 32px;
+  }
+  .tab-underline {
+    display: none;
   }
 }
 
