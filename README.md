@@ -1,3 +1,4 @@
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?logo=vercel&logoColor=white)](YOUR_LIVE_URL)
 # Dimi B Photography
 
 A polished portfolio and booking website for Dimi B Photography, a Northern Virginia photography brand focused on portraits, events, family sessions, and travel work.
