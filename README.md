@@ -1,3 +1,4 @@
+[![Deployed](https://img.shields.io/badge/Deployed-Live-brightgreen)](https://www.dimibphoto.com/)
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?logo=vercel&logoColor=white)](YOUR_LIVE_URL)
 # Dimi B Photography
 
